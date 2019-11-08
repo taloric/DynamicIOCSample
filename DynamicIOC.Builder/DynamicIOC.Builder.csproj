@@ -59,4 +59,7 @@
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>call $(OutDir)\DynamicIOC.Builder.exe</PostBuildEvent>
+  </PropertyGroup>
 </Project>
